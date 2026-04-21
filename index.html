@@ -668,6 +668,33 @@ for(let h=5; h<=24; h++){
   busSchedules.push({ schedule, info: busInfos[0], arrow:"⬇️", left:252, startOffset:2 });
 }//田町車庫 1549
 
+for(let h=5; h<=24; h++){
+  let schedule = [];
+  if(isMonday){
+    // 月曜：歴博経由
+    schedule.push(
+      {stop:"田町車庫", time:14*60+44},{stop:"国立博物館入口", time:14*60+45},{stop:"国立歴史民俗博物館", time:14*60+47.75},{stop:"市役所下", time:14*60+50},{stop:"京成佐倉駅南口", time:14*60+51.75}
+    );
+     }else{
+    // 通常
+    schedule.push(
+      {stop:"田町車庫", time:14*60+47.25},{stop:"国立博物館入口", time:14*60+48},{stop:"市役所下", time:14*60+49.75},{stop:"京成佐倉駅南口", time:14*60+51.10}
+    ); 
+  }
+
+  schedule.push(
+    {stop:"栄町", time:14*60+53},{stop:"新町", time:14*60+54},{stop:"佐倉市立美術館", time:14*60+55},{stop:"宮小路町", time:14*60+57.10},{stop:"岩渕薬品本社前", time:14*60+58.80},
+    {stop:"鏑木町二丁目", time:15*60+0},{stop:"ＪＲ佐倉駅北口", time:15*60+1.50} ,{stop:"表町", time:15*60+5.10},
+    {stop:"倉庫前", time:15*60+6.75},{stop:"立正佼成会", time:15*60+7.75},{stop:"坂上", time:15*60+8.70},{stop:"石川入口", time:15*60+9.75},
+    {stop:"城郵便局", time:15*60+11},{stop:"根郷", time:15*60+12},{stop:"根郷小学校", time:15*60+13.10},{stop:"第二工業団地入口", time:15*60+14.60},
+    {stop:"松ヶ丘団地", time:15*60+15.90},{stop:"木之子", time:15*60+17},{stop:"木之子神社", time:15*60+18},{stop:"神門", time:15*60+19.10},
+    {stop:"南部中学校", time:15*60+21.75},{stop:"大作公園野球場", time:15*60+23.90},{stop:"大作北", time:15*60+24.10},{stop:"大作一丁目", time:15*60+24.30},
+    {stop:"大作中央", time:15*60+24.60},{stop:"工団中央", time:15*60+25.50},{stop:"工団西", time:15*60+25.90},{stop:"第三工業団地", time:15*60+26.50}
+  );
+   
+  busSchedules.push({ schedule, info: busInfos[0], arrow:"⬇️", left:252, startOffset:2 });
+}//田町車庫 1601-1604
+
 // --- 臼井駅発 下り染井野南行き ---
 for(let h=5; h<=24; h++){
   const schedule = [
