@@ -920,6 +920,13 @@ for(let h=5; h<=24; h++){
 // 田町車庫←→(回送)←→京成佐倉駅南口←→JR佐倉駅北口←→第二工業団地中央←→物井駅
 for(let h=5; h<=24; h++){
   const schedule = [
+    {stop:"田町車庫", time:11*60+35}, {stop:"国立博物館入口", time:11*60+36},{stop:"市役所下", time:11*60+37.60},{stop:"京成佐倉駅南口", time:11*60+39.35}
+  ];
+  busSchedules.push({ schedule, info: busInfos[0], arrow:"⬇️", left:252, startOffset:2 });
+}//田町車庫 1138
+  
+for(let h=5; h<=24; h++){
+  const schedule = [
     {stop:"京成佐倉駅南口", time:11*60+43},{stop:"市役所下", time:11*60+45}, {stop:"佐倉市役所", time:11*60+47.60},{stop:"並木町", time:11*60+48.40},{stop:"横町", time:11*60+49.30},
     {stop:"宮小路町", time:11*60+50.80},{stop:"岩渕薬品本社前", time:11*60+52.10},{stop:"鏑木町二丁目", time:11*60+53.90},{stop:"ＪＲ佐倉駅北口", time:11*60+55},{stop:"表町", time:11*60+56.90},
     {stop:"倉庫前", time:11*60+58},{stop:"立正佼成会", time:11*60+59},{stop:"坂上", time:12*60+0},{stop:"石川入口", time:12*60+1},
@@ -930,7 +937,6 @@ for(let h=5; h<=24; h++){
   busSchedules.push({ schedule, info: busInfos[0], arrow:"⬇️", left:252, startOffset:2 });
 }//京成佐倉駅 1143
 
-// --- 染井野循環便（上下切替） ---
 for(let h=5; h<=24; h+=2){
   const schedule = [
     {stop:"京成佐倉駅", time:17*60+31, arrow:"⬆️", left:212, icon:"icon/someino/LV_U501_Loop1.png"},
