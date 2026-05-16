@@ -1281,6 +1281,18 @@ schedule.push(
   busSchedules.push({ schedule, info: busInfos[16], arrow:"⬆️", left:212, startOffset:2 });
 //第三工業団地916
 
+for(let h=5; h<=24; h++){
+  const schedule = [
+    {stop:"馬渡坂上", time:8*60+51},{stop:"八坂神社入口", time:8*60+52},{stop:"馬渡局入口", time:8*60+53.20},{stop:"小篠塚", time:8*60+53.80},{stop:"神門", time:8*60+59.90},
+    {stop:"木之子神社", time:9*60+0.75},{stop:"木之子", time:9*60+1.80},{stop:"松ヶ丘団地", time:9*60+3},{stop:"第二工業団地入口", time:9*60+4.75},
+    {stop:"根郷小学校", time:9*60+5.70},{stop:"根郷", time:9*60+6.75},{stop:"城郵便局", time:9*60+7.90},{stop:"石川入口", time:9*60+9},{stop:"坂上", time:9*60+10.10},
+    {stop:"立正佼成会", time:9*60+10.80},{stop:"倉庫前", time:9*60+11.80},{stop:"表町", time:9*60+13.10},{stop:"ＪＲ佐倉駅北口", time:9*60+14.50},{stop:"鏑木町二丁目", time:9*60+16.30},
+    {stop:"岩渕薬品本社前", time:9*60+19},{stop:"宮小路町", time:9*60+20.75},{stop:"二番町", time:9*60+23.25},{stop:"栄町", time:9*60+24},{stop:"京成佐倉駅南口", time:9*60+25.60},
+    {stop:"市役所下", time:9*60+19},{stop:"国立博物館入口", time:9*60+20.75},{stop:"田町車庫", time:9*60+23.25}
+  ];
+  busSchedules.push({ schedule, info: busInfos[10], arrow:"⬆️", left:212, startOffset:2 });
+}//馬渡坂上932
+
 
 // --- ここまでで朝5時～夕方14時の全便対応 ---
 
